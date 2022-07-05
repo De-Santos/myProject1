@@ -1,13 +1,12 @@
-import random
-import math
+class Solution:
+    def twoSum( nums: list[int], target: int) -> list[int]:
+        for x in range(len(nums)):
+            for s in range(len(nums)):
+                if nums[s] + nums[x] == target:
+                    return [x, s]
 
-random.seed(math.pi)
 
-print(random.random())
-
-
-
-random.seed(10)
-
-print(random.random())
-
+s = Solution
+nums = [2,3,4]
+target = 6
+print(s.twoSum(nums=nums, target=target))
